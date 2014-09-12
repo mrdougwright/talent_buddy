@@ -2,12 +2,14 @@ var express = require('express');
 var fs = require('fs');
 var app = express();
 
-app.get('/login', function(req, res) {
-  res.sendfile('./login.html');
+app.get('/', function(req, res) {
+  res.redirect('./views/login.html');
 });
-
+app.get('/login', function(req, res) {
+  res.sendfile('./views/login.html');
+});
 app.get('/register', function(req, res) {
-  res.sendfile('./register.html');
+  res.sendfile('./views/register.html');
 });
 
 app.use(express.static(__dirname + '/public'));
