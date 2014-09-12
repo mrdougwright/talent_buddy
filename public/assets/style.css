@@ -1,0 +1,34 @@
+header {
+  text-align: center;
+}
+header a, img, div {
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto;
+}
+nav {
+  margin: 0 20%;
+  padding: 0;
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.button {
+  color: white;
+  width: 120px;
+  height: 40px;
+  border: 1px solid rgb(233, 203, 84);
+}
+.button p {
+  margin: 10px;
+
+}
+.yellow {
+  background-color: rgb(241, 220, 134);
+}
