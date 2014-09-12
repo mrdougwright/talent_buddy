@@ -33,6 +33,7 @@ nav {
 }
 .button {
   color: white;
+  font-weight: bold;
   width: 140px;
   height: 30px;
   padding-top: 10px;
@@ -41,8 +42,8 @@ nav {
   margin: 8px;
 }
 .yellow {
-  border: 1px solid rgb(233, 203, 84);
-  background-color: rgb(241, 220, 134);
+  border: 2px solid rgb(248, 230, 35);
+  background-color: rgb(252, 234, 37);
 }
 
 section {
