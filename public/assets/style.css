@@ -1,12 +1,14 @@
 body {
   margin: 0;
   font-family: Verdana;
+  background-color: rgb(236, 236, 236);
 }
 a {
   text-decoration: none;
 }
 header {
   text-align: center;
+  background-color: white;
 }
 header a, img {
   vertical-align: middle;
@@ -22,6 +24,10 @@ nav {
   padding: 14px 0;
   height: 40px;
   width: 800px;
+}
+section {
+  clear: both;
+  position: relative;
 }
 
 
@@ -46,11 +52,6 @@ nav {
   background-color: rgb(252, 234, 37);
 }
 
-section {
-  clear: both;
-  position: relative;
-  background-color: rgb(236, 236, 236);
-}
 .banner {
   height: 280px;
 }
@@ -58,12 +59,13 @@ section {
   height: 100%;
 }
 .hero img {
-  width: 100%;
+  width: 1300px;
   position: absolute;
   display: block;
   left: 0;
   right: 0;
   min-height: 280px;
+  max-height: 580px;
 }
 .hero .hover {
   position: absolute;
@@ -75,6 +77,7 @@ section {
 .hero p {
   text-align: center;
 }
+
 
 .form {
   padding: 45px;
@@ -101,18 +104,27 @@ section {
 footer {
   position: absolute;
   bottom: 0px;
-  left: 47%;
+  width: 100%;
+}
+footer div {
+  margin: 0 auto;
+  width: 120px;
 }
 footer p {
   font-size: 12px;
   color: gray;
 }
 
-/* Media Queries */
 
+/* Media Queries */
+@media (min-width: 1300px) {
+  .hero img {
+    width: 100%;
+  }
+}
 @media (max-width: 800px) {
   nav {
     margin: 0 2%;
     width: 100%;
-  } 
+  }
 }
