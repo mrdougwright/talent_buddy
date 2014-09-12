@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  font-family: Verdana;
+}
 header {
   text-align: center;
 }
@@ -7,9 +11,14 @@ header a, img, div {
   display: inline-block;
   margin-top: auto;
 }
+header a, div {
+  padding: 0 5px;
+}
+
 nav {
   margin: 0 20%;
-  padding: 0;
+  padding: 14px 0;
+  height: 40px;
   text-align: center;
 }
 
@@ -21,14 +30,47 @@ nav {
 }
 .button {
   color: white;
-  width: 120px;
-  height: 40px;
+  width: 140px;
+  height: 38px;
   border: 1px solid rgb(233, 203, 84);
 }
 .button p {
-  margin: 10px;
+  margin: 8px;
 
 }
 .yellow {
   background-color: rgb(241, 220, 134);
+}
+
+.hero {
+  clear: both;
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.hero p {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  left: 47%;
+  margin-top: 8%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 47%;
+}
+footer p {
+  font-size: 12px;
+  color: gray;
+}
+@media (max-width: 900px) {
+  nav {
+    margin: 0;
+  } 
 }
