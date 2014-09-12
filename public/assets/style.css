@@ -2,16 +2,18 @@ body {
   margin: 0;
   font-family: Verdana;
 }
+a {
+  text-decoration: none;
+}
 header {
   text-align: center;
 }
-header a, img, div {
+header a, img {
   vertical-align: middle;
-  text-decoration: none;
   display: inline-block;
   margin-top: auto;
 }
-header a, div {
+header a {
   padding: 0 5px;
 }
 
@@ -22,6 +24,7 @@ nav {
   text-align: center;
 }
 
+
 .right {
   float: right;
 }
@@ -31,24 +34,32 @@ nav {
 .button {
   color: white;
   width: 140px;
-  height: 38px;
-  border: 1px solid rgb(233, 203, 84);
+  height: 30px;
+  padding-top: 10px;
 }
 .button p {
   margin: 8px;
-
 }
 .yellow {
+  border: 1px solid rgb(233, 203, 84);
   background-color: rgb(241, 220, 134);
 }
 
-.hero {
+section {
   clear: both;
   position: relative;
+  background-color: rgb(236, 236, 236);
+}
+.banner {
+  height: 280px;
+}
+.hero {
+  height: 100%;
 }
 .hero img {
   width: 100%;
   position: absolute;
+  display: block;
   left: 0;
   right: 0;
 }
@@ -57,9 +68,31 @@ nav {
   color: white;
   font-size: 40px;
   left: 47%;
-  margin-top: 8%;
+  margin: 8% 0;
 }
 
+.form {
+  padding: 45px;
+  text-align: center;
+}
+
+.form input {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 400px;
+  font-size: 20px;
+  border: 2px solid rgb(214, 214, 214);
+}
+.form .btn-container {
+  margin: 30px auto;
+  width: 120px;
+}
+.form .button {
+  background-color: rgb(53, 145, 207);
+  height: 38px;
+  padding-top: 16px;
+}
 footer {
   position: absolute;
   bottom: 0px;
